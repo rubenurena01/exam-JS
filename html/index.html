@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
+        <title>Examen</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <script defer src="../js/script.js"></script>
+    </head>
+    <body id="cuerpo">
+        <div id="container">
+            <h2 id="nombre">NOMBRE: </h2>
+            <h2 id="fecha">FECHA: </h2>
+            <div id="imagen"></div>
+            <div ><h2 id="final">Nota:</h2></div>
+            <h3>PARTE TEÓRICA (3 ptos, repuesta incorrecta=-0.5 ptos)</h3>
+            <h3>1.(1pto)¿En qué lugar se ejecuta generalmente el codigo Javascript?</h3>
+            <form action="action.php" name="preguntas" id="preguntas">
+                <input type="radio" name="respuesta" id="respuestaA"> Servidor
+                <br>
+                <input type="radio" name="respuesta" id="respuestaB"> Cliente (en el propio navegador de internet)
+                <h3>2.(1pto)¿Cuál de estas es para la inserción del código Javascript en las páginas HTML? </h3>
+                <select name="respuesta2" id="respuestaEj2">
+                    <option value="valor0">Selecciona un valor</option>
+                    <option value="valor1">&lsaquo; javascript _code &rsaquo;  y  &lsaquo; /javascript_code &rsaquo; </option>
+                    <option value="valor2">&lsaquo; script &rsaquo; y &lsaquo; /script &rsaquo;</option>
+                    <option value="valor3">&lsaquo; ?script &rsaquo; y &lsaquo; script? &rsaquo; </option>
+                    <option value="valor4">&lsaquo; javascript &rsaquo; y &lsaquo; /javascript &rsaquo;</option>
+                </select>
+                <h3>3.(1pto)¿Cómo se escriben los comentarios en javascript?</h3>
+                <input type="checkbox" name="respuesta3" id="respuestaEj3A"> &frasl;* Comentario *&frasl;
+                <br>
+                <input type="checkbox" name="respuesta3" id="respuestaEj3B"> &lsaquo;! Comentario &rsaquo;
+                <br>
+                <input type="checkbox" name="respuesta3" id="respuestaEj3C"> &frasl; &frasl; Comentario de una línea
+                <br>
+                <input type="checkbox" name="respuesta3" id="respuestaEj3D">  &frasl; Comentario de una línea
+                <br><br><br>
+                <input type="button" name="Enviar" value="Enviar" onclick="validar()" id="boton">
+                <input type="button" name="Refrescar" value="Recargar" onclick="window.location.reload();"id="boton2">
+            </form>
+        </div>
+        <div id="notificacion"></div>
+    </body>
+</html>
