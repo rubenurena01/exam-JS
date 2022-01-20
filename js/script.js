@@ -51,6 +51,9 @@ function validar(){
         return false
     }
     if(resultado<1.5){
+        if(resultado<0){
+            resultado=0
+        }
         resuFinal.append(" "+resultado)
         cuerpo.style.backgroundColor = 'red'
         document.getElementById('imagen').innerHTML="<img src='../img/suspenso.png'>"
